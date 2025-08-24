@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #0f0f0f;
+  border-bottom: 2px solid #00ffcc;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffcc;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #0a0a0a, #111);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00ffcc;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff00ff;
+  color: #fff;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #ff00ff;
+  margin-bottom: 20px;
+}
+
+/* Services */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #00ffcc;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.service:hover {
+  border-color: #ff00ff;
+  transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #00ffcc;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f0f0f;
+  border-top: 2px solid #00ffcc;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-box {
+    flex-direction: column;
+    align-items: center;
+}
+}
